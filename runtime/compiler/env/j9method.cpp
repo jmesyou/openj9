@@ -2615,6 +2615,10 @@ void TR_ResolvedJ9Method::construct()
       {x(TR::java_math_BigInteger_add,                   "add",                   "(Ljava/math/BigInteger;)Ljava/math/BigInteger;")},
       {x(TR::java_math_BigInteger_subtract,              "subtract",              "(Ljava/math/BigInteger;)Ljava/math/BigInteger;")},
       {x(TR::java_math_BigInteger_multiply,              "multiply",              "(Ljava/math/BigInteger;)Ljava/math/BigInteger;")},
+      {x(TR::java_math_BigInteger_implSquareToLen,       "implSquareToLen",       "([II[II)[I")},
+      {x(TR::java_math_BigInteger_implMulAdd,            "implMulAdd",            "([I[IIII)I")},
+      {x(TR::java_math_BigInteger_shiftRightImplWorker,  "shiftRightImplWorker",  "([I[IIII)V")},
+      {x(TR::java_math_BigInteger_shiftLeftImplWorker,  "shiftLeftImplWorker",   "([I[IIII)V")},
       {    TR::unknownMethod}
       };
 

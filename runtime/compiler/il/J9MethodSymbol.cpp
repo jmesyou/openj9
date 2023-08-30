@@ -115,7 +115,7 @@ J9::MethodSymbol::isPureFunction()
       case TR::java_lang_StrictMath_tan:
       case TR::java_lang_StrictMath_tanh:
       case TR::java_nio_Bits_keepAlive:
-         /*
+         /* TODO(jmesyou): Investigate why these are turned off
       case TR::java_math_BigDecimal_valueOf:
       case TR::java_math_BigDecimal_add:
       case TR::java_math_BigDecimal_subtract:
@@ -201,6 +201,10 @@ static TR::RecognizedMethod canSkipNullChecks[] =
    //TR::java_util_Vector_addElement,
    TR::java_math_BigDecimal_longString1C,
    TR::java_math_BigDecimal_longString2,
+   TR::java_math_BigInteger_implSquareToLen,
+   TR::java_math_BigInteger_implMulAdd,
+   TR::java_math_BigInteger_shiftRightImplWorker,
+   TR::java_math_BigInteger_shiftLeftImplWorker,
    TR::java_util_EnumMap__nec_,
    TR::java_nio_Bits_getCharB,
    TR::java_nio_Bits_getCharL,
@@ -290,6 +294,10 @@ static TR::RecognizedMethod canSkipBoundChecks[] =
    TR::java_util_TreeMap_all,
    TR::java_math_BigDecimal_longString1C,
    TR::java_math_BigDecimal_longString2,
+   TR::java_math_BigInteger_implSquareToLen,
+   TR::java_math_BigInteger_implMulAdd,
+   TR::java_math_BigInteger_shiftRightImplWorker,
+   TR::java_math_BigInteger_shiftLeftImplWorker,
    TR::java_util_HashMap_get,
    TR::java_util_HashMap_findNonNullKeyEntry,
    TR::java_util_HashMap_putImpl,
